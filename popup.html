@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>letsget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="shield-wrap" id="shield-wrap">
+            <img src="icon.png" width="36" height="36" alt="letsget shield">
+        </div>
+        <div class="header-text">
+            <div class="app-name">letsget</div>
+            <div class="free-badge">FREE</div>
+        </div>
+        <button id="btn-toggle" class="toggle-btn" title="Pause / Resume blocking"></button>
+    </div>
+
+    <!-- Announcement -->
+    <div id="announcement-banner" class="announcement-banner" style="display:none">
+        <span class="announcement-icon">📢</span>
+        <div id="announcement-text" class="announcement-text"></div>
+        <button id="btn-dismiss-announcement" class="announcement-close" title="Dismiss">&times;</button>
+    </div>
+
+    <!-- Status card -->
+    <div id="status-card" class="status-card">
+        <div class="status-row">
+            <div class="status-left">
+                <div id="dot" class="dot on"></div>
+                <span id="status-text" class="status-text">Blocking Ads</span>
+            </div>
+            <span id="status-sub" class="status-sub">Active</span>
+        </div>
+    </div>
+
+    <!-- Stats grid -->
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-val" id="val-today">0</div>
+            <div class="stat-label">Blocked Today</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-val accent" id="val-total">0</div>
+            <div class="stat-label">Blocked Total</div>
+        </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="btn-group">
+        <button id="btn-update-check" class="btn btn-ghost">🚀 Check For Updates</button>
+    </div>
+
+    <!-- Notice -->
+    <div id="notice-box" class="notice-box"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
